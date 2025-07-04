@@ -18,7 +18,7 @@ except FileNotFoundError:
     st.stop()
 
 # === PAGE CONFIG ===
-st.set_page_config(page_title="Kepler CampusBot", layout="wide")
+st.set_page_config(page_title="Kepler CollegeBot", layout="wide")
 
 # === CUSTOM STYLING ===
 st.markdown("""
@@ -68,7 +68,7 @@ current_page = st.query_params.get('page', 'chat')
 
 if current_page == "chat":
     st.image("kepler-logo.png", width=120)
-    st.markdown("<h2 class='kepler-header'>Welcome to Kepler CampusBot 🎓</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='kepler-header'>Welcome to Kepler CollegeBot 🎓</h2>", unsafe_allow_html=True)
     st.markdown("<p style='text-align:center;'>Ask about Kepler College rules, policies, or services.</p>", unsafe_allow_html=True)
 
     if "history" not in st.session_state:
